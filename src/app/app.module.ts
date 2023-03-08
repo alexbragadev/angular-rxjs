@@ -5,10 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { QuickStartComponent } from './shared/components/quick-start/quick-start.component';
+import { WarmUpObservableComponent } from './shared/components/warm-up-observable/warm-up-observable.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    QuickStartComponent,
+    WarmUpObservableComponent
   ],
   imports: [
     BrowserModule,
