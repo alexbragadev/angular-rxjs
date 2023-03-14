@@ -15,14 +15,23 @@ export class EmptyObervableComponent implements OnInit {
       console.log('Observable executed')
       subscriber.next('Alesson')
       subscriber.next('Gilza')
+
+      setTimeout(() => subscriber.error(new Error('Failure')), 2000);
       setTimeout(() => {
         subscriber.next('Natanael')
-        subscriber.complete()
-      }, 2000)
+      }, 4000);
+
+      return () => {
+        console.log('Teardown')
+      };
     });
 
     console.log('Before subscibre')
-    observable$.subscribe(value => console.log(value))
+    observable$.subscribe({
+      next: value => console.log(value),
+      error: err => console.log(err.message),
+      complete: () => console.log('Completed')
+    });
     console.log('After subscribe')
   }
 

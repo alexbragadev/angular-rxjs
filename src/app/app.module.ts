@@ -7,14 +7,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { QuickStartComponent } from './shared/components/quick-start/quick-start.component';
 import { WarmUpObservableComponent } from './shared/components/warm-up-observable/warm-up-observable.component';
-import { EmptyObervableComponent } from './shared/components/empty-obervable/empty-obervable.component';
+import { EmptyObervableComponent } from './shared/components/subscription-lifecycle/empty-obervable.component';
+import { ColdAndHotObervablesComponent } from './shared/components/cold-and-hot-obervables/cold-and-hot-obervables.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuickStartComponent,
     WarmUpObservableComponent,
-    EmptyObervableComponent
+    EmptyObervableComponent,
+    ColdAndHotObervablesComponent
   ],
   imports: [
     BrowserModule,
