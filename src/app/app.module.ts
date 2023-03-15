@@ -9,6 +9,7 @@ import { QuickStartComponent } from './shared/components/quick-start/quick-start
 import { WarmUpObservableComponent } from './shared/components/warm-up-observable/warm-up-observable.component';
 import { EmptyObervableComponent } from './shared/components/subscription-lifecycle/empty-obervable.component';
 import { ColdAndHotObervablesComponent } from './shared/components/cold-and-hot-obervables/cold-and-hot-obervables.component';
+import { FunctionsComponent } from './shared/components/functions/functions.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ColdAndHotObervablesComponent } from './shared/components/cold-and-hot-
     QuickStartComponent,
     WarmUpObservableComponent,
     EmptyObervableComponent,
-    ColdAndHotObervablesComponent
+    ColdAndHotObervablesComponent,
+    FunctionsComponent
   ],
   imports: [
     BrowserModule,
