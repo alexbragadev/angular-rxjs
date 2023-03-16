@@ -10,6 +10,8 @@ import { WarmUpObservableComponent } from './shared/components/warm-up-observabl
 import { EmptyObervableComponent } from './shared/components/subscription-lifecycle/empty-obervable.component';
 import { ColdAndHotObervablesComponent } from './shared/components/cold-and-hot-obervables/cold-and-hot-obervables.component';
 import { FunctionsComponent } from './shared/components/functions/functions.component';
+import { PipeableOperatorsComponent } from './shared/components/pipeable-operators/pipeable-operators.component';
+import { FlatteningOperatorsComponent } from './shared/components/flattening-operators/flattening-operators.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { FunctionsComponent } from './shared/components/functions/functions.comp
     WarmUpObservableComponent,
     EmptyObervableComponent,
     ColdAndHotObervablesComponent,
-    FunctionsComponent
+    FunctionsComponent,
+    PipeableOperatorsComponent,
+    FlatteningOperatorsComponent
   ],
   imports: [
     BrowserModule,
