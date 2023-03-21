@@ -12,6 +12,7 @@ import { ColdAndHotObervablesComponent } from './shared/components/cold-and-hot-
 import { FunctionsComponent } from './shared/components/functions/functions.component';
 import { PipeableOperatorsComponent } from './shared/components/pipeable-operators/pipeable-operators.component';
 import { FlatteningOperatorsComponent } from './shared/components/flattening-operators/flattening-operators.component';
+import { SubjectComponent } from './shared/components/subject/subject.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FlatteningOperatorsComponent } from './shared/components/flattening-ope
     ColdAndHotObervablesComponent,
     FunctionsComponent,
     PipeableOperatorsComponent,
-    FlatteningOperatorsComponent
+    FlatteningOperatorsComponent,
+    SubjectComponent
   ],
   imports: [
     BrowserModule,
